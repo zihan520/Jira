@@ -1,14 +1,14 @@
 import React, {FormEvent} from 'react';
 
-
+const apiURL = process.env.REACT_APP_API_URL
 export const  LoginScreen = ()=>{
     const login = (uName: string,pwd: string)=>{
-        fetch('/login',{
+        fetch(`${apiURL}/login`,{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
             },
-            body:JSON.stringify({uName,pwd})
+            body:JSON.stringify({username:uName,password:pwd})
         }).then((res)=>{
 
         })
@@ -30,5 +30,3 @@ export const  LoginScreen = ()=>{
         <button type={'submit'}>登录</button>
     </form>
 }
-//安装差价 npx imooc-jira-tool
-//入口文件引入 import { loadDevTools } from 'jira-dev-tool'
