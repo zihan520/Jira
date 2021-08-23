@@ -1,0 +1,79 @@
+{
+  "users": [
+      {
+          "id":1,
+          "name":"高修文"
+      },
+      {
+        "id":2,
+        "name":"熊天成"
+    },
+    {
+        "id":3,
+        "name":"郑华"
+    },
+    {
+        "id":4,
+        "name":"王文静"
+    }
+  ],
+  "projects": [
+    {
+        "id": "1",
+        "name": "骑手管理",
+        "personId": "1",
+        "organization": "骑手组",
+        "created": 154632100
+      },
+    {
+        "id": "2",
+        "name": "团购app",
+        "personId": "2",
+        "organization": "团购组",
+        "created": 154632300
+      },
+    {
+      "id": "3",
+      "name": "物料管理系统",
+      "personId": "2",
+      "organization": "物料组",
+      "created": 154630021
+    },
+    {
+      "id": "4",
+      "name": "总部管理系统",
+      "personId": "3",
+      "organization": "总部组",
+      "created": 164030089
+    },
+    {
+      "id": "5",
+      "name": "送餐路线规划系统",
+      "personId": "4",
+      "organization": "规划系统",
+      "created": 164030101
+    }
+  ],
+  "province":[
+    {
+      "value":"110000",
+      "label":"北京市"
+    },
+    {
+      "value":"120000",
+      "label":"天津"
+    },
+    {
+      "value":"3200000000",
+      "label":"南京"
+    },
+    {
+      "value":"34000000000",
+      "label":"安徽"
+    },
+    {
+      "value":"310000000",
+      "label":"湖北"
+    }
+  ]
+}
