@@ -60,16 +60,12 @@
   "msw": {
     "workerDirectory": "public"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "src/**/*.{jsx,txs,ts,js,json,css,md}": [
       "prettier --write",
       "eslint --fix",
       "git add"
-    ]
+    ],
+    "*.{js,css,md}": "prettier --write"
   }
 }
