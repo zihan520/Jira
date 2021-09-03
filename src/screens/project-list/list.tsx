@@ -26,8 +26,7 @@ export const List = ({list, users}: IsState) => {
         {users.length > 0 ? list.map((item, index) => (
             <tr key={item.id}>
                 <td>{item.name}</td>
-                <td>{users.find(user => user.id == item.personId)?.name}</td>
-            </tr>
+                <td>{users.find(user => user.id == item.personId)?.name}</td></tr>
         )) : null}
         </tbody>
     </table>)
