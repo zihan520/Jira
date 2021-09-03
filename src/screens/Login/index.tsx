@@ -19,7 +19,8 @@ export const LoginScreen = () => {
             <input type="text" id={"username"}/>
             <br/>
             <label htmlFor="password">密码</label><input type="password" id={"password"}/>
-            <br/><button type={"submit"}>登录</button>
+            <br/>
+            <button type={"submit"}>登录</button>
         </form>
     );
 };
