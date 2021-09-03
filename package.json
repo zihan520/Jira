@@ -25,12 +25,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "prettier"
     ]
   },
   "browserslist": {
@@ -48,10 +50,21 @@
   "devDependencies": {
     "@types/qs": "^6.9.6",
     "dotenv-cli": "^4.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.0",
     "json-server": "^0.16.3",
-    "prettier": "^2.3.2"
+    "lint-staged": "^11.1.2",
+    "prettier": "2.3.2"
   },
   "msw": {
     "workerDirectory": "public"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
