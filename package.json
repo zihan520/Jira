@@ -29,7 +29,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pre": "prettier --write ./src/**/**.{js,jsx,tsx,ts,less,md,json}"
   },
   "eslintConfig": {
     "extends": [
@@ -57,19 +58,18 @@
     "husky": "^7.0.2",
     "json-server": "^0.16.3",
     "lint-staged": "^11.1.2",
-    "prettier": "2.3.2",
-    "pretty-quick": "^3.1.1"
+    "prettier": "^2.3.2",
+    "pretty-quick": "^3.1.1",
+    "yorkie": "^2.0.0"
   },
   "msw": {
     "workerDirectory": "public"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "gitHooks": {
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.{jsx,txs,ts,js,json,css,md}": [
+    "src/**/*.{jsx,tsx,ts,js,json,css,md}": [
       "prettier --write",
       "eslint --fix",
       "git add"
