@@ -1,6 +1,7 @@
 import React, {FormEvent} from 'react';
 import {useAuth} from 'context/auth-context';
 import {Button, Input} from 'antd';
+import styled from '@emotion/styled';
 export const LoginScreen = () => {
   const {login, user} = useAuth();
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -18,9 +19,12 @@ export const LoginScreen = () => {
       <br />
       <Input type="password" id={'password'} placeholder={'请输入密码'} />
       <br />
-      <Button style={{marginTop: '10px'}} htmlType={'submit'} type={'primary'}>
+      <WidthBtn style={{marginTop: '10px'}} htmlType={'submit'} type={'primary'}>
         登录
-      </Button>
+      </WidthBtn>
     </form>
   );
 };
+const WidthBtn = styled(Button)`
+  width: 100%;
+`;
