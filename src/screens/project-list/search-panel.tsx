@@ -41,11 +41,11 @@ export const SearchPanel = ({param, setParam, users}: SearchPanelProps) => {
           }}
         >
           <option value="">负责人</option>
-          {users.map((item) => (
+          {users&&users.length>0?users.map((item) => (
             <option key={item.id} value={item.id}>
               {item.name}
             </option>
-          ))}
+          )):null}
         </select>
       </div>
     </form>
