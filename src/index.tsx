@@ -10,8 +10,7 @@ loadDevTools(() =>
   ReactDOM.render(
     <React.StrictMode>
       <AppProviders>
-        <App />
-      </AppProviders>
+        <App /></AppProviders>
     </React.StrictMode>,
     document.getElementById('root'),
   ),
