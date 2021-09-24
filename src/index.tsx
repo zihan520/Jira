@@ -9,8 +9,7 @@ import {AppProviders} from './context/index';
 loadDevTools(() =>
   ReactDOM.render(
     <React.StrictMode>
-      <AppProviders>
-        <App /></AppProviders>
+      <AppProviders><App /></AppProviders>
     </React.StrictMode>,
     document.getElementById('root'),
   ),
