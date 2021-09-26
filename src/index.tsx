@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'antd-mobile/dist/antd-mobile.css';
-import {loadDevTools} from 'jira-dev-tool';
-import {AppProviders} from './context/index';
+import { loadDevTools } from 'jira-dev-tool';
+import { AppProviders } from './context/index';
 loadDevTools(() =>
   ReactDOM.render(
     <React.StrictMode>
-      <AppProviders><App /></AppProviders>
+      <AppProviders>
+        <App />
+      </AppProviders>
     </React.StrictMode>,
     document.getElementById('root'),
   ),
