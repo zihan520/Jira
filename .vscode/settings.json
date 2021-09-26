@@ -1,0 +1,22 @@
+{
+  "beautify.config": "",
+  "change-case.c": [
+
+
+    "snake_case",
+    "camelCase",
+    "PascalCase",
+    "CONST_CASE"
+  ],
+  "change-case.cpp": [
+    "camelCase",
+    "PascalCase",
+    "CONST_CASE"
+  ],
+  "eslint.codeAction.disableRuleComment": {
+
+    "enable": true,
+    "location": "separateLine"
+  },
+  "vsicons.associations.fileDefault.file": null
+}

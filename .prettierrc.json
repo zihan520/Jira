@@ -6,7 +6,8 @@
   "singleQuote": true,
   "jsxSingleQuote": false,
   "trailingComma": "all",
-  "bracketSpacing": false,
+  "bracketSpacing": true,
   "jsxBracketSameLine": false,
-  "arrowParens": "always"
+  "arrowParens": "always",
+ "htmlWhitespaceSensitivity": "ignore","disableLanguages": ["vue"]
 }
